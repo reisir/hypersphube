@@ -11,8 +11,8 @@ Squirc=(0),(#ShadowRadius#) | CurveTo (#ShadowRadius#),(0),(0),((#Size# / #Hyper
 Stroke=StrokeWidth #ShadowStrokeWidth# | Stroke Color #ShadowStrokeColor#
 Fill=Fill Color #ShadowBackgroundColor#
 Modifiers=Offset #ShadowStrokeRadius#,#ShadowStrokeRadius#
-X=#ShadowX#
-Y=#ShadowY#
+X=((#SCREENAREAWIDTH# / 2 - #Size# / 2) + #ShadowX#)
+Y=((#SCREENAREAHEIGHT# / 2 - #Size# / 2) + #ShadowY#)
 Hidden=(1-#EnableShadow#)
 
 [Base]
@@ -22,3 +22,5 @@ Squirc=(0),(#Radius#) | CurveTo (#Radius#),(0),(0),((#Size# / #Hypersphube#)),((
 Stroke=StrokeWidth #StrokeWidth# | Stroke Color #StrokeColor#
 Fill=Fill Color #BackgroundColor#
 Modifiers=Offset #StrokeRadius#,#StrokeRadius#
+X=(#SCREENAREAWIDTH# / 2 - #Size# / 2)
+Y=(#SCREENAREAHEIGHT# / 2 - #Size# / 2)

@@ -3,10 +3,9 @@
 @IncludeVariables=#@#Variables.inc
 @IncludeAudioLevel=#@#AudioLevel.inc
 @IncludeBands=#@#Bands.inc
-@IncludeHypersphubes=#@#Hypersphubes.inc
+@IncludeMeasures=#@#Measures.inc
 
 [Variables]
-Scale=1
 Hypersphube=6.8762
 Invert=1
 

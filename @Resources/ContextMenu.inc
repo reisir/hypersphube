@@ -12,13 +12,17 @@ ContextAction4=[!SetWindowPosition "([#CURRENTCONFIGX] + ([#CURRENTCONFIGWIDTH] 
 ContextTitle5=-
 ContextAction5=
 ContextTitle6=Edit variables
-ContextAction6=["#CONFIGEDITOR#" "#@#settings.inc"]
+ContextAction6=["#CONFIGEDITOR#" "#@#Variables.inc"]
 ContextTitle7=Refresh Hypersphube
 ContextAction7=[!RefreshGroup Hypersphube]
 ContextTitle8=-
 ContextAction8=
-ContextTitle9=Open skin menu
-ContextAction9=[!SkinMenu]
-ContextTitle10=Unload skin
-ContextAction10=[!DeactivateConfig]
+ContextTitle9=Toggle FunkyMode
+ContextAction9=[!SetVariable "FunkyMode" "([#FunkyMode] = 1 ? 0 : 1)"][!WriteKeyValue Variables "FunkyMode" [#FunkyMode] "#@#Variables.inc"][!Refresh]
+ContextTitle10=-
+ContextAction10=
+ContextTitle11=Open skin menu
+ContextAction11=[!SkinMenu]
+ContextTitle12=Unload skin
+ContextAction12=[!DeactivateConfig]
 

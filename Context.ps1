@@ -1,7 +1,7 @@
 # Skin information
 $SkinName = "Hypersphube"
 $ROOTCONFIG = $SkinName
-$editVariablesFile = "#@#settings.inc"
+$editVariablesFile = "#@#Variables.inc"
 
 # Output file
 $out = "@Resources\ContextMenu.inc"
@@ -72,7 +72,8 @@ $menu = @(
     $current, $spacer,
     $centerHorizontal, $centerVertical, $spacer,
     $editVariables, $refreshGroup, $spacer,
-    $skinmenu, $unloadSelf
+    (ToggleVariable FunkyMode),
+    $spacer, $skinmenu, $unloadSelf
 )
 
 function Write-Menu {

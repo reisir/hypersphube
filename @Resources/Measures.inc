@@ -1,3 +1,9 @@
+[MeasureHypersphube]
+Measure=Calc
+Formula=#Min# + (MeasureAudio * (#Max# - #Min#))
+UpdateDivider=1
+OnChangeAction=[!SetVariable Hypersphube "([&MeasureHypersphube] / 100)"][!UpdateMeterGroup Hypersphube][!Redraw]
+
 [hp0]
 Measure=Calc
 Formula=(#Min# + (MeasureBand0 * (#Max# - #Min#))) / 100

@@ -4,16 +4,8 @@
 [Variables]
 ; How many bands to generate
 Bands=8
-; How many frames of data to keep (an integer higher than 0)
-; Higher accuracy also means higher latency
-Accuracy=5
 ; How many bands to skip, it's recommended to skip the first band because of AudioLevel inaccuracies
 SkipBands=1
-FreqMin=20
-FreqMax=20000
-Sensitivity=25
-FFTAttack=0
-FFTDecay=0
 ; Assuming Update=16
 FPS=60
 
