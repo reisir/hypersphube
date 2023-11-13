@@ -70,7 +70,6 @@ function ToggleVariable {
 
 $menu = @(
     $current, $spacer,
-    $centerHorizontal, $centerVertical, $spacer,
     $editVariables, $refreshGroup, $spacer,
     (ToggleVariable FunkyMode),
     $spacer, $skinmenu, $unloadSelf
